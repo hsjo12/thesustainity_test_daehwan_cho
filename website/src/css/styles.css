@@ -1,0 +1,77 @@
+.swapInput {
+  outline: none;
+  @apply text-black px-2 rounded-xl bg-transparent;
+}
+.swapInput::-webkit-outer-spin-button,
+.swapInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.swapInput[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.box {
+  transition: all 0.2s ease-out;
+  background-color: rgba(0, 32, 83, 0.502);
+  box-shadow: 5px 5px 10px #000000;
+  @apply w-full text-[whitesmoke] rounded-xl p-4 min-h-[200px]  tracking-[0.1rem];
+}
+
+.innerBox {
+  transition: all 0.2s ease-out;
+  box-shadow: 3px 3px 3px #000000;
+  @apply w-full bg-[#14141485] text-[whitesmoke] rounded-xl p-4 min-h-[200px]  tracking-[0.1rem];
+}
+
+.nftBox {
+  transition: all 0.2s ease-out;
+  box-shadow: 3px 3px 5px #000000;
+  @apply w-full bg-[#1a2d49] text-[whitesmoke] rounded-xl p-4 min-h-[200px]  tracking-[0.1rem];
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.listBox {
+  transition: all 0.2s ease-out;
+}
+
+.boxWithScrollBar {
+  @apply min-h-[200px] max-h-[200px] md:min-h-[450px] md:max-h-[450px] customizedScrollbar overflow-y-scroll;
+}
+.customizedScrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+.customizedScrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.customizedScrollbar::-webkit-scrollbar-thumb {
+  background: #001249;
+  @apply rounded-xl;
+}
+
+.customizedLotteryScrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+.customizedLotteryScrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.customizedLotteryScrollbar::-webkit-scrollbar-thumb {
+  background: #9e9e9ebb;
+  box-shadow: -1px 1px 3px 0px whitesmoke;
+}
+
+@media (hover: hover) {
+  .listBox:hover {
+    background-color: #242424;
+    box-shadow: 3px 3px 3px #000000;
+    @apply rounded-lg;
+  }
+}

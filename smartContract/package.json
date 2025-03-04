@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.2.0",
+    "dotenv": "^16.4.7",
+    "erc721a-upgradeable": "^4.3.0",
+    "hardhat": "^2.22.19",
+    "solady": "^0.1.10"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0"
+  }
+}

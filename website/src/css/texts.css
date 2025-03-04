@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEXTS */
+.logo {
+  @apply md:text-4xl text-3xl font-fjalla_one;
+}
+.notFoundText {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  @apply font-bold  text-[2rem] tracking-[0.6rem] md:text-[5rem] md:tracking-[0.8rem] font-bebas_neue;
+}
+.subTitle {
+  @apply text-2xl xl:text-3xl  tracking-[0.2rem] font-bebas_neue;
+}
+.largeText {
+  @apply text-xl xl:text-2xl  tracking-[0.2rem] font-bebas_neue;
+}
+.mediumText {
+  @apply text-lg xl:text-xl  tracking-[0.2rem] font-bebas_neue;
+}

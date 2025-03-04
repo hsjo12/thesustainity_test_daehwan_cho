@@ -1,0 +1,18 @@
+{
+  "CarbonCredit20VaultModule#carbonCredit20VaultLogic": "0xa6a6F96a9016e9f5812a99cc99af12610F0513a3",
+  "CarbonCredit721Module#carbonCredit721Logic": "0xCbD83766927cCB1d2428A3863c0Df46B2eB35543",
+  "RouterModule#routerLogic": "0x95063ccA412cdbB71aDdc7bAb89688aa4fd1C502",
+  "RouterVaultModule#routerVaultLogic": "0xc2AaB24EB5a8fF3A79939bA8C17DfBD3d14C36D7",
+  "UserStorageModule#userStorageLogic": "0x189d2221f02f8d28a1D7B66A1a8a1a7073988e09",
+  "CarbonCredit20VaultModule#carbonCredit20VaultProxy": "0xc31Df2daee7ebca3C74c5F853b5D87f2916b49Cb",
+  "CarbonCredit721Module#carbonCredit721Proxy": "0x839d891523Da1622b15C030043B6FaAaCaE9595D",
+  "RouterModule#routerProxy": "0x776879967655F1506441CC2146A648eF27f4E7c5",
+  "RouterVaultModule#routerVaultProxy": "0x64AbD9b07da0767fE0E0001d7Bd1C0f5FC9A082D",
+  "UserStorageModule#UserStorageProxy": "0x5315a4b6a41cC32bcfD4AFaF9a8026edB18D412C",
+  "CarbonCredit20VaultModule#CarbonCredit20Vault": "0xc31Df2daee7ebca3C74c5F853b5D87f2916b49Cb",
+  "CarbonCredit721Module#CarbonCredit721": "0x839d891523Da1622b15C030043B6FaAaCaE9595D",
+  "RouterModule#Router": "0x776879967655F1506441CC2146A648eF27f4E7c5",
+  "RouterVaultModule#RouterVault": "0x64AbD9b07da0767fE0E0001d7Bd1C0f5FC9A082D",
+  "UserStorageModule#UserStorage": "0x5315a4b6a41cC32bcfD4AFaF9a8026edB18D412C",
+  "CarbonCredit20Module#CarbonCredit20": "0x785f515f2C09643FB8458AB0e70FB6fe0850e2A0"
+}

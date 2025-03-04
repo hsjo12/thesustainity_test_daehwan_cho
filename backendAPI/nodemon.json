@@ -1,0 +1,5 @@
+{
+  "exec": "npx ts-node",
+  "watch": ["**/*.ts"],
+  "ext": "ts"
+}
