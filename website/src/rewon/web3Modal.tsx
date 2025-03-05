@@ -1,9 +1,8 @@
 "use client";
 import { createAppKit } from "@reown/appkit/react";
 import { EthersAdapter } from "@reown/appkit-adapter-ethers";
-
 import { sepolia } from "@reown/appkit/networks";
-import { localNode } from "./networks";
+
 import { ReactNode } from "react";
 
 import dotenv from "dotenv";
