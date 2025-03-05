@@ -325,7 +325,7 @@ As you can see the above strucutre, there are 5 main smart contracts.
         curl -X GET http://localhost:3001/nft/balance/0x1234...
         ```
 
-## Test Contract
+## Test Smart contracts
 
 ```bash
 cd smartContract
