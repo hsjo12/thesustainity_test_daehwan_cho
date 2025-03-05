@@ -44,7 +44,7 @@ As you can see the above strucutre, there are 5 main smart contracts.
 1. **Clone the repository and install all dependencies**
 
    ```bash
-   git clone https://github.com/hsjo12/latch.git
+   git clone https://github.com/hsjo12/thesustainity_test_daehwan_cho.git
    cd smartContract
 
    npm install
@@ -85,13 +85,23 @@ As you can see the above strucutre, there are 5 main smart contracts.
 
 4. **Copy and Past the abis folrder from the smart contract to the website folder**
 
-5. **Build Latch website**
+5. **Create a `.env` file in the smartContract folder with the following content:**
+
+   - To generate a REOWN project id : https://cloud.reown.com/sign-in
+
+   ```env
+   NEXT_PUBLIC_REOWN_PROJECT_ID="REOWN project id"
+   NEXT_PUBLIC_RPC="Alchemy RPC"
+   NEXT_PUBLIC_STARTING_BLOCK="Deployed block number or latest block number"
+   ```
+
+6. **Build website**
 
    ```bash
    npm run build
    ```
 
-6. **Start Latch website**
+7. **Start website**
 
    ```bash
    npm run start
