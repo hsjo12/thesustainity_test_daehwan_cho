@@ -330,7 +330,15 @@ As you can see the above strucutre, there are 5 main smart contracts.
 ```bash
 cd smartContract
 
-npx hardhat test --network eth_sepolia
+npx hardhat test
+```
+
+## Generate test coverage
+
+```bash
+cd smartContract
+
+npx hardhat coverage
 ```
 
 ## Deployment Addresses
