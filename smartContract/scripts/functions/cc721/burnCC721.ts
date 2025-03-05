@@ -1,12 +1,10 @@
 import { setUp } from "../utils/setUp";
 import { ethers } from "hardhat";
 
-const AMOUNT = 1000; // Amount of tokens to burn
-
 async function main() {
   const { cc20, cc721, router, userStorage } = await setUp();
   const [defaultUser] = await ethers.getSigners();
-
+  const AMOUNT = 1000;
   const amount = ethers.parseEther(String(AMOUNT));
 
   let userBalanceBeforeBurn = await cc721.balanceOf(defaultUser.address);

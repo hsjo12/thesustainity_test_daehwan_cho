@@ -32,6 +32,7 @@ const USER_STORAGE = new Contract(
   SIGNER
 );
 const ROUTER = new Contract(RouterJson.address, RouterJson.abi, SIGNER);
+
 export const balanceOf: RequestHandler = async (req, res, next) => {
   try {
     const { address } = req.params;

@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 import { setUp } from "../utils/setUp";
 
-const TO = ""; // User address
+const TO = "0x5F190998a332D58512A27b4e23b225564ea04074"; // User address
 const MANAGER_ROLE =
   "0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08";
 

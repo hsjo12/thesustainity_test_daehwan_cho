@@ -164,7 +164,7 @@ contract CarbonCredit721 is ReentrancyGuardUpgradeable, ERC721AQueryableUpgradea
             abi.encodePacked(
                 '{"name": "',name(),' #', Strings.toString(tokenId),
                 '", "description": "A Carbon Credit 721 token representing a specific amount of Carbon Credit 20.", "attributes": [{"trait_type": "Carbon Credit", "value": "', Strings.toString(creditAmount),
-                '"}], "image":',$.imageURI,'}'
+                '"}], "image": "',$.imageURI,'"}'
             )
         );
     }

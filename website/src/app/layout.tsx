@@ -31,8 +31,17 @@ const fjalla_one = Fjalla_One({
 export const metadata: Metadata = {
   title: "TheSustainity",
   description: "Created By Daehwan",
+  openGraph: {
+    images: [
+      {
+        url: "https://ipfs.io/ipfs/bafybeic6dzrce7jsqjgxhycks2sufd4xvbiscwiuz6tquqqfpphjwvehoa", // Replace with your actual image URL
+        width: 1200,
+        height: 630,
+        alt: "TheSustainity OG Image",
+      },
+    ],
+  },
 };
-
 const cls = (...classNames: string[]): string => {
   return classNames.join(" ");
 };
