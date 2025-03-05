@@ -61,6 +61,8 @@ As you can see the above strucutre, there are 5 main smart contracts.
 
    2-2. **Create a `.env` file in the smartContract folder with the following content:**
 
+   - To get a RPC : https://auth.alchemy.com/
+
    ```env
    PK="Deployer private key"
    RPC_URL="Alchemy RPC"
@@ -88,6 +90,7 @@ As you can see the above strucutre, there are 5 main smart contracts.
 5. **Create a `.env` file in the smartContract folder with the following content:**
 
    - To generate a REOWN project id : https://cloud.reown.com/sign-in
+   - To get a RPC : https://auth.alchemy.com/
 
    ```env
    NEXT_PUBLIC_REOWN_PROJECT_ID="REOWN project id"
@@ -112,7 +115,7 @@ As you can see the above strucutre, there are 5 main smart contracts.
 1. **Copy and past the abis folder from the smart contract folder to backendAPI folder**
 
 2. **Create a `.env` file in the backendAPI folder with the following content:**
-
+   - To get a RPC : https://auth.alchemy.com/
    ```env
    PK="Deployer private key"
    RPC_URL="Alchemy RPC"
@@ -122,14 +125,8 @@ As you can see the above strucutre, there are 5 main smart contracts.
 
 1. **Go to smartContract folder**
 
-   ```bash
-   cd smartContract
-
-   npx hardhat test --network eth_sepolia
-   ```
-
 2. **See the `scripts/functions/cc20` and `scripts/functions/cc721`**
-   Each directory has scripts interecting with smart contract
+   Each directory has scripts interacting with smart contract
 
    ### CC20 (ERC20)
 
