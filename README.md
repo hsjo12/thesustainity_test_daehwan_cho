@@ -37,7 +37,7 @@ As you can see the above strucutre, there are 5 main smart contracts.
    - `public functions` can be called both internally and externally, whereas `external functions` can only be called from outside the smart contract. This makes external functions more gas-efficient.
    - `external` functions read directly from calldata, which consumesless gas than public functions read from memory.
 
-4. Use `Direct` Hash Bytes Instead of the `keccak256` Function
+4. Use `Direct Hash Bytes` Instead of the `keccak256` Function
 
    - Using a precomputed hash is more gas-efficient than calling the keccak256 function to hash values on-chain.
 
