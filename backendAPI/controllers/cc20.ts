@@ -111,9 +111,9 @@ export const transfer: RequestHandler = async (req, res, next) => {
 
 export const burn: RequestHandler = async (req, res, next) => {
   try {
-    const { recipient, amount } = req.body;
+    const { amount } = req.body;
 
-    if (!recipient || !amount) {
+    if (!amount) {
       res.status(400).json({ error: "Recipient and amount are required" });
       return;
     }
@@ -121,9 +121,9 @@ export const burn: RequestHandler = async (req, res, next) => {
     const balanceOfUser = await CC20.balanceOf(SIGNER.address);
 
     if (balanceOfUser < BigInt(amount)) {
-      res
-        .status(400)
-        .json({ error: "The amount of token to burn is not enough" });
+      res.status(400).json({
+        error: `The amount of token to burn is not enough (user balance: ${balanceOfUser})`,
+      });
       return;
     }
 
@@ -137,7 +137,7 @@ export const burn: RequestHandler = async (req, res, next) => {
         txHash: receipt.hash,
         result: `Burned ${parseFloat(
           Number(formattedAmount).toFixed(4)
-        )} CC20 from ${recipient}`,
+        )} CC20 from ${SIGNER.address}`,
       });
     } else {
       res.status(400).json({ error: "Transaction failed" });

@@ -18,6 +18,41 @@ As you can see the above strucutre, there are 5 main smart contracts.
 
 5. **RouterVault** is a vault that receives ETH when CC20 is purchased with ETH by users.
 
+## Gas Optimization
+
+1. Use Gas-Optimized Standard Smart Contracts such as `Solady's ERC20.sol` and `ERC721A`
+
+   - These contracts spend less gas compared to OpenZeppelin's implementations.
+
+2. No extra events(Minted, Burned, Transferred)
+
+   - Only built-in `Transfer` event is used for gas optimization.
+   - The standard `Transfer` event has 3 parameters `Transfer(from, to, amount)`.
+   - When a token is minted, the `from` is address zero (0x00..00)
+   - When a token is burned, the `to` is address zero (0x00..00)
+   - This feature can be useful for distinguishing mint and burn events on the front end.
+
+3. Use `external` instead of `public` to function
+
+   - `public functions` can be called both internally and externally, whereas `external functions` can only be called from outside the smart contract. This makes external functions more gas-efficient.
+   - `external` functions read directly from calldata, which consumesless gas than public functions read from memory.
+
+4. Use `Direct` Hash Bytes Instead of the `keccak256` Function
+
+   - Using a precomputed hash is more gas-efficient than calling the keccak256 function to hash values on-chain.
+
+5. Use the `unchecked` Keyword When Overflow or Underflow Is Impossible
+
+   - The Solidity 0.8 compiler automatically checks for overflow and underflow, making SafeMath unnecessary.
+   - The `unchecked` keyword disables these checks, reducing gas costs when overflow or underflow is not a concern.
+
+6. Figure Out the Optimal Number of Optimizer Runs
+   - Increasing the number of optimizer runs reduces gas costs during function execution, but it may incur higher gas costs during contract deployment compared to using fewer runs.
+
+## Maintenance
+
+Gas optimization is important, but so is maintainability. Since blockchain is immutable, a deployed smart contract cannot be changed even if it has bugs or security issues. In such cases, a proxy contract can help, though it costs a bit more than a regular smart contract.
+
 ## Requirements
 
 - [Node](https://nodejs.org/en/download/)
